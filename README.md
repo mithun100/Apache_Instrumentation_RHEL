@@ -28,6 +28,12 @@ cd Apache_Instrumentation_RHEL
 
 - Download the AppDynamics Apache agent from the [AppDynamics Downloads](https://download.appdynamics.com/) page.
 - Place the downloaded agent file in the `Apache_Instrumentation_RHEL` directory.
+- Change the line in Dockerfile as per the downloaded agent name
+
+```bash
+#Copy the agent files
+COPY ./appdynamics-sdk-native-nativeWebServer-64bit-linux-24.11.0.2449.tgz ./
+```
 
 ### 3. Build and Run the Docker Image
 
